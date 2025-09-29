@@ -56,6 +56,11 @@ public class GameManager : MonoBehaviour
             WinGame();
         }
     }
+
+    public void PauseGame()
+    {
+        PauseMenu.gamePaused = true;
+    }
     public void WinGame()
     {
         Debug.Log("High score screen! You won!");

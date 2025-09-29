@@ -3164,6 +3164,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7842361509465637273}
+    - targetCorrespondingSourceObject: {fileID: 7842361511225503154, guid: de390b92578914d3e82f447d5645bfb6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7842361509465637279}
   m_SourcePrefab: {fileID: 100100000, guid: de390b92578914d3e82f447d5645bfb6, type: 3}
 --- !u!1 &7842361509465637272 stripped
 GameObject:
@@ -3196,12 +3200,40 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6e7ddd8d-9d4b-4bb3-ace8-8adde0cddeea
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a0420cd3-0407-49a3-9550-0b91c2381658
+    m_ActionName: 'Player/Consume[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5b8c1e1a-d781-4af5-9a40-511016e84696
+    m_ActionName: 'Player/Poop[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6820ce65-066b-4f8f-88f8-637909b4e499
+    m_ActionName: 'Player/Pause[/Keyboard/p]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7842361509465637279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7842361509465637272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfdaddf9c31a83645b8dd7552c180d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
