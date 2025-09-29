@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ThirdPersonController : MonoBehaviour
 {
     public CharacterController controller;
+    private PlayerInputController _playerInputController;
     public RatAnimator ratAnimator;
     public Transform camera;
     public Transform itemSpawnPoint;
@@ -21,6 +21,11 @@ public class ThirdPersonController : MonoBehaviour
 
     public GameObject display_pickUpItem;
 
+    private void Awake()
+    {
+        _playerInputController = GetComponent<PlayerInputController>();
+    }
+
     public void Update()
     {
         displayPoopCounter.text = poopCounter.ToString();
@@ -33,8 +38,8 @@ public class ThirdPersonController : MonoBehaviour
 
     public void ThirdPersonMovement()
     {
-        float horizontal    = Input.GetAxisRaw("Horizontal");
-        float vertical      = Input.GetAxisRaw("Vertical");
+        float horizontal = _playerInputController.MovementInputVector.x;
+        float vertical = _playerInputController.MovementInputVector.y;
         Vector3 direction   = new Vector3(horizontal,0f,vertical).normalized;
     
             if (direction.magnitude >= 0.1f)
